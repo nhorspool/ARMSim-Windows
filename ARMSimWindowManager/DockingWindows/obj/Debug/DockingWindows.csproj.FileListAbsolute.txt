@@ -1,0 +1,11 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\DockingWindows.dll.config
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\DockingWindows.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\DockingWindows.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\ARMSimWindowManager.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\DotNetMagic2005.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\bin\Debug\ARMSimWindowManager.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\obj\Debug\DockingWindows.csprojResolveAssemblyReference.cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\obj\Debug\DockingWindows.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows\obj\Debug\DockingWindows.pdb

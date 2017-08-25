@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARMSim.Plugins.ARMRegister64Plugin", "ARMSim.Plugins.ARMRegister64Plugin\ARMSim.Plugins.ARMRegister64Plugin.csproj", "{E950060A-67B3-448C-AED2-49731EB676AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARMSim.Plugins.UIControls", "ARMSim.Plugins.UIControls\ARMSim.Plugins.UIControls.csproj", "{E562BEE7-2AFC-4202-8D80-EA6098116A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARMPluginInterfaces", "..\ARMPluginInterfaces\ARMPluginInterfaces.csproj", "{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARMSim.Plugins.MatrixOperationsPlugin", "ARMSim.Plugins.MatrixOperationsPlugin\ARMSim.Plugins.MatrixOperationsPlugin.csproj", "{E62520A3-5698-4824-B0CB-1B934E8A4A14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CSC230|Any CPU = CSC230|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E950060A-67B3-448C-AED2-49731EB676AF}.CSC230|Any CPU.ActiveCfg = Release|Any CPU
+		{E950060A-67B3-448C-AED2-49731EB676AF}.CSC230|Any CPU.Build.0 = Release|Any CPU
+		{E950060A-67B3-448C-AED2-49731EB676AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E950060A-67B3-448C-AED2-49731EB676AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E950060A-67B3-448C-AED2-49731EB676AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E950060A-67B3-448C-AED2-49731EB676AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.CSC230|Any CPU.ActiveCfg = Release|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.CSC230|Any CPU.Build.0 = Release|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E562BEE7-2AFC-4202-8D80-EA6098116A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.CSC230|Any CPU.ActiveCfg = CSC230|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.CSC230|Any CPU.Build.0 = CSC230|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.CSC230|Any CPU.ActiveCfg = Release|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.CSC230|Any CPU.Build.0 = Release|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62520A3-5698-4824-B0CB-1B934E8A4A14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

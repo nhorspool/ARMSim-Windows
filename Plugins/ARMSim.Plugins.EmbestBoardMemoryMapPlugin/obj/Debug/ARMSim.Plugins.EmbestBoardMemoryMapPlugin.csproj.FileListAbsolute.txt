@@ -1,0 +1,11 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMSim.Plugins.UIControls.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\bin\Debug\ARMSim.Plugins.UIControls.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.InterruptControllerDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.csproj.GenerateResource.Cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardMemoryMapPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardMemoryMapPlugin.csprojResolveAssemblyReference.cache

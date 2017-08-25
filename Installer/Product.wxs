@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  <Product Id="*" UpgradeCode="3e0627aa-bb80-4b04-b668-706fbc3a7cf8" Version="2.0.1.0"
+           Language="1033" Name="ARMSim#" Manufacturer="UVic">
+
+    <Package InstallerVersion="300" Compressed="yes"/>
+    <Media Id="1" Cabinet="armsim.cab" EmbedCab="yes" />
+    <PropertyRef Id="NETFRAMEWORK40FULL"/>
+    <UIRef Id="WixUI_Advanced"/>
+
+    <!-- Step 1: Define the directory structure -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONFOLDER" Name="ARMSim201"/>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="ARMSim#"/>
+      </Directory>
+    </Directory>
+
+    <!-- Step 2: Add files to your installer package -->
+    <DirectoryRef Id="APPLICATIONFOLDER">
+      <Component Id="ARMSim.exe.config" Guid="5bc26d9f-c982-4bcb-9637-3f2c9f944d14">
+        <File Id="ARMSim.exe.config" Source="$(var.ARMSim.ProjectDir)\Build201\ARMSim.exe.config" KeyPath="yes" Checksum="yes"/>
+      </Component>
+      <Component Id="ARMSim.exe" Guid="24e74f3a-e810-4712-b52d-a119b8356af8">
+        <File Id="ARMSim.exe" Source="$(var.ARMSim.ProjectDir)\Build201\ARMSim.exe" KeyPath="yes" Checksum="yes"/>
+      </Component>
+      <Component Id="armNoneEabiAs.exe" Guid="5828b262-21e2-47ef-a48d-5dc5bf0bd971">
+        <File Id="armNoneEabiAs.exe" Source="$(var.ARMSim.ProjectDir)\Build201\arm-none-eabi-as.exe" KeyPath="yes"/>
+      </Component>
+      <Component Id="ARMPluginInterfaces.dll" Guid="3dd03a91-ae60-47e0-93b4-c72a194aa9cb">
+        <File Id="ARMPluginInterfaces.dll" Source="$(var.ARMSim.ProjectDir)\Build201\ARMPluginInterfaces.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="ARMSimWindowManager.dll" Guid="8b3d44c9-7cad-4f51-bac6-33a42d263a22">
+        <File Id="ARMSimWindowManager.dll" Source="$(var.ARMSim.ProjectDir)\Build201\ARMSimWindowManager.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="DockingWindows2.dll" Guid="d134da8d-f4da-4990-be92-eac67e0d64c1">
+        <File Id="DockingWindows2.dll" Source="$(var.ARMSim.ProjectDir)\Build201\DockingWindows2.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="WeifenLuo.WinFormsUI.Docking.dll" Guid="dcb6c11e-b645-4703-836a-1478ff1ba414">
+        <File Id="WeifenLuo.WinFormsUI.Docking.dll" Source="$(var.ARMSim.ProjectDir)\Build201\WeifenLuo.WinFormsUI.Docking.dll" KeyPath="yes"/>
+      </Component>
+      <Component Id="StaticWindows.dll" Guid="4aaf4ada-79fd-4da1-8df6-b675261cf0df">
+        <File Id="StaticWindows.dll" Source="$(var.ARMSim.ProjectDir)\Build201\StaticWindows.dll" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <Property Id="ApplicationFolderName" Value="ARMSim201" />
+    <Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut2" Guid="e18b7495-18bc-4962-ae33-525236829ba5">
+        <Shortcut Id="ApplicationStartMenuShortcut" Name="ARMSim#" Description="ARM Simulator"
+                  Target="[#ARMSim.exe]"  WorkingDirectory="APPLICATIONFOLDER"/>
+        <Shortcut Id="UninstallProduct" Name="Uninstall ARMSim#" Description="Uninstalls ARMSim#"
+            Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\ARMSim" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <Condition Message="This application requires .NET Framework 4.0. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+    </Condition>
+
+    <!-- Step 3: Tell WiX to install the files -->
+    <Feature Id="MainApplication" Title="Main Application" Level="1" ConfigurableDirectory="APPLICATIONFOLDER">
+      <ComponentRef Id="ARMSim.exe.config" />
+      <ComponentRef Id="ARMSim.exe" />
+      <ComponentRef Id="armNoneEabiAs.exe" />
+      <ComponentRef Id="ARMPluginInterfaces.dll" />
+      <ComponentRef Id="ARMSimWindowManager.dll" />
+      <ComponentRef Id="DockingWindows2.dll" />
+      <ComponentRef Id="WeifenLuo.WinFormsUI.Docking.dll" />
+      <ComponentRef Id="StaticWindows.dll" />
+      <ComponentRef Id="ApplicationShortcut2" />
+    </Feature>
+  </Product>
+</Wix>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9E75411-78B3-455B-A480-6965E9DCCB12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARMSim.Plugins.EmbestBoardMemoryMapPlugin</RootNamespace>
+    <AssemblyName>ARMSim.Plugins.EmbestBoardMemoryMapPlugin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\ARMSim.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\ARMSim.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlackButtons.cs" />
+    <Compile Include="BlueButtons.cs" />
+    <Compile Include="EightSegmentDisplay.cs" />
+    <Compile Include="EmbestBoardMemoryMapPlugin.cs" />
+    <Compile Include="InterruptControllerDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InterruptControllerDisplay.designer.cs">
+      <DependentUpon>InterruptControllerDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InteruptController.cs" />
+    <Compile Include="IOPorts.cs" />
+    <Compile Include="LcdDisplay.cs" />
+    <Compile Include="Leds.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PWMTimer.cs" />
+    <Compile Include="TimerBlock.cs" />
+    <Compile Include="Uarts.cs" />
+    <Compile Include="WatchDogTimer.cs" />
+    <Compile Include="ZeroPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ARMPluginInterfaces\ARMPluginInterfaces.csproj">
+      <Project>{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}</Project>
+      <Name>ARMPluginInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ARMSim.Plugins.UIControls\ARMSim.Plugins.UIControls.csproj">
+      <Project>{E562BEE7-2AFC-4202-8D80-EA6098116A11}</Project>
+      <Name>ARMSim.Plugins.UIControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InterruptControllerDisplay.resx">
+      <DependentUpon>InterruptControllerDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestFiles\Stacks.s" />
+    <Content Include="TestFiles\testBlackButtons.s" />
+    <Content Include="TestFiles\testBlueButtons.s" />
+    <Content Include="TestFiles\testEightSeg.s" />
+    <Content Include="TestFiles\testEmbestBoardMemoryMapPlugin.s" />
+    <Content Include="TestFiles\testExceptions.s" />
+    <Content Include="TestFiles\testInterupts.s" />
+    <Content Include="TestFiles\testLeds.s" />
+    <Content Include="TestFiles\testTimer.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestFiles\Constants.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

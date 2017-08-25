@@ -1,0 +1,6 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\bin\Debug\ARMSimWindowManager.dll.config
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\bin\Debug\ARMSimWindowManager.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\bin\Debug\ARMSimWindowManager.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\obj\Debug\ARMSimWindowManager.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\obj\Debug\ARMSimWindowManager.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\obj\Debug\ARMSimWindowManager.csprojResolveAssemblyReference.cache

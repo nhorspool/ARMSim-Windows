@@ -1,0 +1,182 @@
+.expand{
+	float: left;
+	width: 1em;
+	height: 1em;
+}
+
+.link {
+	cursor: pointer;
+}
+
+.page-head{
+	padding: 15px;
+}
+
+.content{
+	padding: 15px;
+    padding-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 3em;
+	border-radius: 5px;
+	flex: 1 1 auto;	
+	box-shadow: 0px 0px 5px 3px #AAAAAA inset;
+}
+
+.sidebar {
+	padding: 0px 15px 3em 15px;
+	flex: 0 0 350px;
+	display: flex;
+	flex-direction: row;
+}
+
+#over{
+	overflow-x: scroll;
+	overflow-y: auto;
+	white-space: nowrap;
+	border-radius: 5px;
+	padding: 0px 5px 5px;
+	flex: 1 0 auto;
+}
+
+#side-well{
+	padding: 0px 8px 5px;
+	padding-bottom: 5px;
+	box-shadow: 0px 0px 5px 3px #AAAAAA inset;	
+	border-radius: 5px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+}
+
+.side-unsorted {
+	list-style: none;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+.side-li-tag {
+	list-style: none;
+}
+
+ul.bulleted {
+    list-style-position: outside;
+}
+
+li.bulleted {
+    list-style-type: square;
+}
+
+html {
+	position: relative;
+	min-height: 100.2%;
+}
+
+.main {
+  	display: flex;
+  	flex: 1 0 auto;
+  	flex-direction: row;
+}
+
+h1 {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.flex-body {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.footer {
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 2em;
+  	text-align: center;
+}
+
+.footer p{
+	margin-bottom: 0px;
+	margin-top: .3em;
+}
+
+.current {
+    font-weight: bold;
+}
+
+.code-block {
+    margin: 0px 15px;
+}
+
+table.table2col {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.expand-table-cell {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table.table2col td:first-child{
+	width: 30%;
+    word-wrap: break-word;
+}
+
+table.table2col th:first-child{
+	width: 30%;
+}
+
+table.table3col td:first-child{
+	width: 25%;
+    word-wrap: break-word;
+}
+
+table.table3col th:first-child{
+	width: 25%;
+}
+
+table.custom {
+    width: auto;
+    table-layout: auto;
+}
+
+table.custom th {
+    width: auto;
+}
+
+table.custom td {
+    width: auto;
+}
+
+table.table3col {
+    width: 100%;
+	table-layout: fixed;
+}
+
+table.table3col td:nth-child(2){
+    width: 25%;
+    word-wrap: break-word;
+}
+
+table.table3col th:nth-child(2) {
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.expand-table-cell:hover {
+	white-space: normal;
+}
+
+.smaller {
+    font-size: small;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+
+.side-head:hover {
+    text-shadow: 0px 0px 0px #4F6D7A;
+}

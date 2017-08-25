@@ -1,0 +1,6 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Installer\bin\Debug\Installer.msi
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Installer\bin\Debug\Installer.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\Installer.wixproj.BindContentsFileListnull.txt
+obj\Debug\Installer.wixproj.BindOutputsFileListnull.txt
+obj\Debug\Installer.wixproj.BindBuiltOutputsFileListnull.txt

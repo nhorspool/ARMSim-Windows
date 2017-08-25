@@ -1,0 +1,9 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMSim.Plugins.EightSegmentDisplayPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMSim.Plugins.EightSegmentDisplayPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMSim.Plugins.UIControls.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\bin\Release\ARMSim.Plugins.UIControls.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\obj\Release\ARMSim.Plugins.EightSegmentDisplayPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\obj\Release\ARMSim.Plugins.EightSegmentDisplayPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EightSegmentDisplayPlugin\obj\Release\ARMSim.Plugins.EightSegmentDisplayPlugin.pdb

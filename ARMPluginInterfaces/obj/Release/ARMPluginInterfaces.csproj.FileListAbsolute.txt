@@ -1,0 +1,5 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMPluginInterfaces\bin\Release\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMPluginInterfaces\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMPluginInterfaces\obj\Release\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMPluginInterfaces\obj\Release\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMPluginInterfaces\obj\Release\ARMPluginInterfaces.csprojResolveAssemblyReference.cache

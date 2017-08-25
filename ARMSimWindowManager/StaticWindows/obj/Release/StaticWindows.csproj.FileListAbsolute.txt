@@ -1,0 +1,12 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\StaticWindows.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\StaticWindows.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.csprojResolveAssemblyReference.cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.StaticMainForm.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.csproj.GenerateResource.Cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.dll.config

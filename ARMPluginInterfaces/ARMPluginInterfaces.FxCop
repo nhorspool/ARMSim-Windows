@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/bin/Debug/ARMPluginInterfaces.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Namespaces>
+   <Namespace Name="ARMPluginInterfaces">
+    <Messages>
+     <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+      <Issue Name="Namespace">
+       <Item>ARM</Item>
+       <Item>ARMPluginInterfaces</Item>
+       <Item>Arm</Item>
+      </Issue>
+     </Message>
+     <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+      <Issue Name="Namespace">
+       <Item>Plugin</Item>
+       <Item>ARMPluginInterfaces</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/bin/Debug/ARMPluginInterfaces.dll">
+    <Modules>
+     <Module Name="armplugininterfaces.dll">
+      <Messages>
+       <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+        <Issue Name="Assembly">
+         <Item>ARM</Item>
+         <Item>'ARMPluginInterfaces.dll'</Item>
+         <Item>Arm</Item>
+        </Issue>
+       </Message>
+       <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+        <Issue Name="Assembly">
+         <Item>Plugin</Item>
+         <Item>'ARMPluginInterfaces.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Excluded" Created="2009-06-23 22:22:12Z">
+        <Issue>
+         <Item>'ARMPluginInterfaces.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="ARMPluginInterfaces">
+        <Types>
+         <Type Name="ARMSimConsoleStream">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'ARMSimConsoleStream'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+           <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Sim</Item>
+             <Item>'ARMSimConsoleStream'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'ARMSimConsoleStream'</Item>
+             <Item>Stream</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.UInt32,ARMPluginInterfaces.IARMHost)">
+            <Messages>
+             <Message Id="ihost" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'ARMSimConsoleStream.ARMSimConsoleStream(uint, IARMHost)'</Item>
+               <Item>ihost</Item>
+               <Item>'ihost'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ARMSimStream">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'ARMSimStream'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+           <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Sim</Item>
+             <Item>'ARMSimStream'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'ARMSimStream'</Item>
+             <Item>Stream</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#ctrlD">
+            <Messages>
+             <Message Id="ctrl" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>ctrl</Item>
+               <Item>'ARMSimStream.ctrlD'</Item>
+               <Item>Ctrl</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#getInteger(System.Int32&amp;)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue>
+               <Item>'ARMSimStream.getInteger(ref int)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="0#" TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Certainty="50">
+               <Item>'result'</Item>
+              </Issue>
+             </Message>
+             <Message Id="get" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>get</Item>
+               <Item>'ARMSimStream.getInteger(ref int)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Write(System.Char)">
+            <Messages>
+             <Message Id="ch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'ARMSimStream.Write(char)'</Item>
+               <Item>ch</Item>
+               <Item>'ch'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Write(System.String)">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'ARMSimStream.Write(string)'</Item>
+               <Item>str</Item>
+               <Item>'str'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="CharacterOutputEventHandler">
+          <Messages>
+           <Message Id="c" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="DelegateParameterMoreMeaningfulName">
+             <Item>'CharacterOutputEventHandler'</Item>
+             <Item>'c'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="IARMHost">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'IARMHost'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#AssertInterrupt(System.Boolean)">
+            <Messages>
+             <Message Id="fiq" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.AssertInterrupt(bool)'</Item>
+               <Item>fiq</Item>
+               <Item>'fiqType'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#cf">
+            <Messages>
+             <Message Id="cf" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>cf</Item>
+               <Item>'IARMHost.cf'</Item>
+               <Item>CF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#flags">
+            <Messages>
+             <Message Id="flags" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>flags</Item>
+               <Item>'IARMHost.flags'</Item>
+               <Item>Flags</Item>
+              </Issue>
+             </Message>
+             <Message Id="flags" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberNoAlternate">
+               <Item>flags</Item>
+               <Item>'IARMHost.flags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#getFPDoubleReg(System.UInt32)">
+            <Messages>
+             <Message Id="get" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>get</Item>
+               <Item>'IARMHost.getFPDoubleReg(uint)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#getFPSingleReg(System.UInt32)">
+            <Messages>
+             <Message Id="get" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>get</Item>
+               <Item>'IARMHost.getFPSingleReg(uint)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#getReg(System.UInt32)">
+            <Messages>
+             <Message Id="get" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>get</Item>
+               <Item>'IARMHost.getReg(uint)'</Item>
+               <Item>Get</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#malloc(System.UInt32)">
+            <Messages>
+             <Message Id="malloc" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>malloc</Item>
+               <Item>'IARMHost.malloc(uint)'</Item>
+               <Item>Malloc</Item>
+              </Issue>
+             </Message>
+             <Message Id="malloc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>malloc</Item>
+               <Item>'IARMHost.malloc(uint)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#nf">
+            <Messages>
+             <Message Id="nf" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>nf</Item>
+               <Item>'IARMHost.nf'</Item>
+               <Item>NF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RequestMnemonic(System.String,System.UInt32,System.String,ARMPluginInterfaces.pluginFormOpcodeEventHandler)">
+            <Messages>
+             <Message Id="Opcode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.RequestMnemonic(string, uint, string, pluginFormOpcodeEventHandler)'</Item>
+               <Item>Opcode</Item>
+               <Item>'formOpcode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RequestOpcodeRange(System.String,ARMPluginInterfaces.pluginInstructionExecuteEventHandler)">
+            <Messages>
+             <Message Id="Opcode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Opcode</Item>
+               <Item>'IARMHost.RequestOpcodeRange(string, pluginInstructionExecuteEventHandler)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RequestOpcodeRange(System.UInt32,System.UInt32,ARMPluginInterfaces.pluginInstructionExecuteEventHandler)">
+            <Messages>
+             <Message Id="Opcode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Opcode</Item>
+               <Item>'IARMHost.RequestOpcodeRange(uint, uint, pluginInstructionExecuteEventHandler)'</Item>
+              </Issue>
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.RequestOpcodeRange(uint, uint, pluginInstructionExecuteEventHandler)'</Item>
+               <Item>Opcode</Item>
+               <Item>'baseOpcode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#setFPDoubleReg(System.UInt32,System.Double)">
+            <Messages>
+             <Message Id="set" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>set</Item>
+               <Item>'IARMHost.setFPDoubleReg(uint, double)'</Item>
+               <Item>Set</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#setFPSingleReg(System.UInt32,System.Single)">
+            <Messages>
+             <Message Id="set" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>set</Item>
+               <Item>'IARMHost.setFPSingleReg(uint, float)'</Item>
+               <Item>Set</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#setReg(System.UInt32,System.UInt32)">
+            <Messages>
+             <Message Id="set" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>set</Item>
+               <Item>'IARMHost.setReg(uint, uint)'</Item>
+               <Item>Set</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Stderr">
+            <Messages>
+             <Message Id="Stderr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Stderr</Item>
+               <Item>'IARMHost.Stderr'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Stdin">
+            <Messages>
+             <Message Id="Stdin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Stdin</Item>
+               <Item>'IARMHost.Stdin'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Stdout">
+            <Messages>
+             <Message Id="Stdout" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Stdout</Item>
+               <Item>'IARMHost.Stdout'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#vf">
+            <Messages>
+             <Message Id="vf" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>vf</Item>
+               <Item>'IARMHost.vf'</Item>
+               <Item>VF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteConsole(System.Char)">
+            <Messages>
+             <Message Id="ch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.WriteConsole(char)'</Item>
+               <Item>ch</Item>
+               <Item>'ch'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteConsole(System.String)">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.WriteConsole(string)'</Item>
+               <Item>str</Item>
+               <Item>'str'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteLineConsole(System.Char)">
+            <Messages>
+             <Message Id="ch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.WriteLineConsole(char)'</Item>
+               <Item>ch</Item>
+               <Item>'ch'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteLineConsole(System.String)">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.WriteLineConsole(string)'</Item>
+               <Item>str</Item>
+               <Item>'str'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteStandardConsole(System.UInt32,System.Char)">
+            <Messages>
+             <Message Id="ch" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMHost.WriteStandardConsole(uint, char)'</Item>
+               <Item>ch</Item>
+               <Item>'ch'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#zf">
+            <Messages>
+             <Message Id="zf" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>zf</Item>
+               <Item>'IARMHost.zf'</Item>
+               <Item>ZF</Item>
+              </Issue>
+             </Message>
+             <Message Id="zf" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>zf</Item>
+               <Item>'IARMHost.zf'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IARMPlugin">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'IARMPlugin'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+           <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Plugin</Item>
+             <Item>'IARMPlugin'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Init(ARMPluginInterfaces.IARMHost)">
+            <Messages>
+             <Message Id="ihost" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'IARMPlugin.Init(IARMHost)'</Item>
+               <Item>ihost</Item>
+               <Item>'ihost'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PluginDescription">
+            <Messages>
+             <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Plugin</Item>
+               <Item>'IARMPlugin.PluginDescription'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PluginName">
+            <Messages>
+             <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Plugin</Item>
+               <Item>'IARMPlugin.PluginName'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InputARMSimFileStream">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'InputARMSimFileStream'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+           <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Sim</Item>
+             <Item>'InputARMSimFileStream'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'InputARMSimFileStream'</Item>
+             <Item>Stream</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="MemorySize">
+          <Messages>
+           <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Excluded" Created="2009-06-23 22:22:12Z" FixCategory="NonBreaking">
+            <Issue Name="NotFlagsNoZeroValue">
+             <Item>'MemorySize'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="MarkEnumsWithFlags" Category="Microsoft.Design" CheckId="CA1027" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue>
+             <Item>'MemorySize'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="OutputARMSimFileStream">
+          <Messages>
+           <Message Id="ARM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>ARM</Item>
+             <Item>'OutputARMSimFileStream'</Item>
+             <Item>Arm</Item>
+            </Issue>
+           </Message>
+           <Message Id="Sim" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Sim</Item>
+             <Item>'OutputARMSimFileStream'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'OutputARMSimFileStream'</Item>
+             <Item>Stream</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="pluginFormOpcodeEventHandler">
+          <Messages>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginFormOpcodeEventHandler'</Item>
+             <Item>Plugin</Item>
+            </Issue>
+           </Message>
+           <Message Id="Opcode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Opcode</Item>
+             <Item>'pluginFormOpcodeEventHandler'</Item>
+            </Issue>
+           </Message>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginFormOpcodeEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="pluginInstructionExecuteEventHandler">
+          <Messages>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginInstructionExecuteEventHandler'</Item>
+             <Item>Plugin</Item>
+            </Issue>
+           </Message>
+           <Message Id="opcode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="DelegateParameter">
+             <Item>'pluginInstructionExecuteEventHandler'</Item>
+             <Item>opcode</Item>
+             <Item>'opcode'</Item>
+            </Issue>
+           </Message>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginInstructionExecuteEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="pluginMemoryAccessReadEventHandler">
+          <Messages>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginMemoryAccessReadEventHandler'</Item>
+             <Item>Plugin</Item>
+            </Issue>
+           </Message>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginMemoryAccessReadEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="pluginMemoryAccessWriteEventHandler">
+          <Messages>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginMemoryAccessWriteEventHandler'</Item>
+             <Item>Plugin</Item>
+            </Issue>
+           </Message>
+           <Message Id="plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>plugin</Item>
+             <Item>'pluginMemoryAccessWriteEventHandler'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue>
+             <Item>'pluginMemoryAccessWriteEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Utils">
+          <Messages>
+           <Message Id="Utils" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+            <Issue Name="Type">
+             <Item>Utils</Item>
+             <Item>'Utils'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#bitsSet(System.UInt32,System.UInt32)">
+            <Messages>
+             <Message Id="bits" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>bits</Item>
+               <Item>'Utils.bitsSet(uint, uint)'</Item>
+               <Item>Bits</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#BoolsToBits(System.Boolean[])">
+            <Messages>
+             <Message Id="Bools" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>Bools</Item>
+               <Item>'Utils.BoolsToBits(bool[])'</Item>
+              </Issue>
+             </Message>
+             <Message Id="bools" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'Utils.BoolsToBits(bool[])'</Item>
+               <Item>bools</Item>
+               <Item>'bools'</Item>
+              </Issue>
+             </Message>
+             <Message Id="bools" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="LanguageSpecificMemberParameter">
+               <Item>'Utils.BoolsToBits(bool[])'</Item>
+               <Item>bools</Item>
+               <Item>'bools'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#isValidAddress(System.UInt32,ARMPluginInterfaces.MemorySize)">
+            <Messages>
+             <Message Id="is" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>is</Item>
+               <Item>'Utils.isValidAddress(uint, MemorySize)'</Item>
+               <Item>Is</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#loadStringFromMemory(ARMPluginInterfaces.IARMHost,System.UInt32,System.UInt32)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue>
+               <Item>'Utils.loadStringFromMemory(IARMHost, uint, uint)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="load" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>load</Item>
+               <Item>'Utils.loadStringFromMemory(IARMHost, uint, uint)'</Item>
+               <Item>Load</Item>
+              </Issue>
+             </Message>
+             <Message Id="ihost" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="MemberParameter">
+               <Item>'Utils.loadStringFromMemory(IARMHost, uint, uint)'</Item>
+               <Item>ihost</Item>
+               <Item>'ihost'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ls2b(System.UInt32)">
+            <Messages>
+             <Message Id="b" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>b</Item>
+               <Item>'Utils.ls2b(uint)'</Item>
+               <Item>B</Item>
+              </Issue>
+             </Message>
+             <Message Id="ls" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>ls</Item>
+               <Item>'Utils.ls2b(uint)'</Item>
+               <Item>LS</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lsb(System.UInt32)">
+            <Messages>
+             <Message Id="lsb" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>lsb</Item>
+               <Item>'Utils.lsb(uint)'</Item>
+               <Item>Lsb</Item>
+              </Issue>
+             </Message>
+             <Message Id="lsb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>lsb</Item>
+               <Item>'Utils.lsb(uint)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#msb(System.UInt32)">
+            <Messages>
+             <Message Id="msb" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>msb</Item>
+               <Item>'Utils.msb(uint)'</Item>
+               <Item>Msb</Item>
+              </Issue>
+             </Message>
+             <Message Id="msb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2009-06-23 22:22:12Z">
+              <Issue Name="Member">
+               <Item>msb</Item>
+               <Item>'Utils.msb(uint)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotPassTypesByReference" Category="Microsoft.Design" CheckId="CA1045">
+    <Resolution Name="Default">Consider a design that does not require that {0} be a reference parameter.</Resolution>
+   </Rule>
+   <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+    <Resolution Name="NotFlagsNoZeroValue">Add a member to {0} that has a value of zero with a suggested name of 'None'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+    <Resolution Name="DelegateParameter">In delegate {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="DelegateParameterMoreMeaningfulName">In delegate {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720">
+    <Resolution Name="LanguageSpecificMemberParameter">In member {0}, consider replacing the language-specific data type identifier '{1}' in parameter name {2} with a more generic term, such as 'value'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+    <Resolution Name="TypeNoAlternate">Rename type name {0} so that it does not end in '{1}'.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkEnumsWithFlags" Category="Microsoft.Design" CheckId="CA1027">
+    <Resolution Name="Default">The constituent members of {0} appear to represent flags that can be combined rather than discrete values. If this is correct, mark the enumeration with FlagsAttribute.</Resolution>
+   </Rule>
+   <Rule TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003">
+    <Resolution Name="Default">Remove {0} and replace its usage with EventHandler&lt;T&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+    <Resolution Name="MemberNoAlternate">Replace the term '{0}' in member name {1} with an appropriate alternate or remove it entirely.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="*" UpgradeCode="3e0627aa-bb80-4b04-b668-706fbc3a7cf8" Version="1.0.0.0" Language="1033" Name="ARMSim" Manufacturer="UVic">
+
+        <Package InstallerVersion="300" Compressed="yes"/>
+        <Media Id="1" Cabinet="armsim.cab" EmbedCab="yes" />
+
+        <!-- Step 1: Define the directory structure -->
+        <Directory Id="TARGETDIR">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="APPLICATIONROOTDIRECTORY" Name="ARMSim21"/>
+            </Directory>
+        </Directory>
+
+        <!-- Step 2: Add files to your installer package -->
+        <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+            <Component Id="ARMSim.exe" Guid="24e74f3a-e810-4712-b52d-a119b8356af8">
+                <File Id="ARMSim.exe" Source="Build201\ARMSim.exe" KeyPath="yes" Checksum="yes"/>
+            </Component>
+            <Component Id="arm-none-eabi-as.exe" Guid="5828b262-21e2-47ef-a48d-5dc5bf0bd971">
+                <File Id="arm-none-eabi-as.exe" Source="Build201\arm-none-eabi-as.exe" KeyPath="yes"/>
+            </Component>
+            <Component Id="ARMPluginInterfaces.dll" Guid="3dd03a91-ae60-47e0-93b4-c72a194aa9cb">
+                <File Id="ARMPluginInterfaces.dll" Source="Build201\ARMPluginInterfaces.dll" KeyPath="yes"/>
+            </Component>
+            <Component Id="ARMSimWindowManager.dll" Guid="8b3d44c9-7cad-4f51-bac6-33a42d263a22">
+                <File Id="ARMSimWindowManager.dll" Source="Build201\ARMSimWindowManager.dll" KeyPath="yes"/>
+            </Component>
+            <Component Id="DockingWindows.dll" Guid="d42be32c-2510-4ed1-a8b3-f83d1bf1e295">
+                <File Id="DockingWindows.dll" Source="Build201\DockingWindows.dll" KeyPath="yes"/>
+            </Component>
+            <Component Id="DockingWindows2.dll" Guid="d134da8d-f4da-4990-be92-eac67e0d64c1">
+                <File Id="DockingWindows2.dll" Source="Build201\DockingWindows2.dll" KeyPath="yes"/>
+            </Component>
+            <Component Id="WeifenLuo.WinFormsUI.Docking.dll" Guid="dcb6c11e-b645-4703-836a-1478ff1ba414">
+                <File Id="WeifenLuo.WinFormsUI.Docking.dll" Source="Build201\WeifenLuo.WinFormsUI.Docking.dll" KeyPath="yes"/>
+            </Component>
+        </DirectoryRef>
+
+        <!-- Step 3: Tell WiX to install the files -->
+        <Feature Id="MainApplication" Title="Main Application" Level="1">
+            <ComponentRef Id="ARMSim.exe" />
+            <ComponentRef Id="arm-none-eabi-as.exe" />
+            <ComponentRef Id="ARMPluginInterfaces.dll" />
+            <ComponentRef Id="ARMSimWindowManager.dll" />
+            <ComponentRef Id="DockingWindows.dll" />
+            <ComponentRef Id="DockingWindows2.dll" />
+            <ComponentRef Id="WeifenLuo.WinFormsUI.Docking.dll" />
+        </Feature>
+    </Product>
+</Wix>

@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F287200-4387-4270-AA3D-F6D1D075757B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARMSim</RootNamespace>
+    <AssemblyName>ARMSim</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ARMSim.snk</AssemblyOriginatorKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Build201\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>ARMSim.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Build201\</OutputPath>
+    <DefineConstants>TRACE;ShowSplashScreen</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>ARMSim.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'CSC230|AnyCPU' ">
+    <OutputPath>Build201\</OutputPath>
+    <DefineConstants>TRACE;ShowSplashScreen</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARMAssembler\ArmAssembler.cs" />
+    <Compile Include="ARMAssembler\ArmElfLibReader.cs" />
+    <Compile Include="ARMAssembler\ArmElfReader.cs" />
+    <Compile Include="ARMAssembler\ArmFileInfo.cs" />
+    <Compile Include="ARMAssembler\AsmFileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ARMAssembler\AssembledProgram.cs" />
+    <Compile Include="ARMAssembler\AssemblerErrors.cs" />
+    <Compile Include="ARMAssembler\DisassembleARM.cs" />
+    <Compile Include="ARMAssembler\ObjFileInfo.cs" />
+    <Compile Include="ARMAssembler\ObjFromAsmFileInfo.cs" />
+    <Compile Include="ARMAssembler\PlaceCodeSections.cs" />
+    <Compile Include="ARMAssembler\SourceLineReader.cs" />
+    <Compile Include="CommandLine\BatchMode.cs" />
+    <Compile Include="CommandLine\ARMSimArguments.cs" />
+    <Compile Include="CommandLine\CommandLineArguments.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GUI\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ARMSimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ARMSimForm.Designer.cs">
+      <DependentUpon>ARMSimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CacheStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CacheStatistics.Designer.cs">
+      <DependentUpon>CacheStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUIUtil.cs" />
+    <Compile Include="GUI\MruStripMenu.cs" />
+    <Compile Include="GUI\MultipleFileOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MultipleFileOpen.Designer.cs">
+      <DependentUpon>MultipleFileOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\AddWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\AddWatch.designer.cs">
+      <DependentUpon>AddWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\CacheView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\CacheView.Designer.cs">
+      <DependentUpon>CacheView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\CodeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\CodeView.designer.cs">
+      <DependentUpon>CodeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\CodeViewList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\CodeViewList.designer.cs">
+      <DependentUpon>CodeViewList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\CodeViewTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\CodeViewTab.designer.cs">
+      <DependentUpon>CodeViewTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\DataCacheView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\DataCacheView.Designer.cs">
+      <DependentUpon>DataCacheView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\GraphicElements.cs" />
+    <Compile Include="GUI\Views\InstructionCacheView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\InstructionCacheView.Designer.cs">
+      <DependentUpon>InstructionCacheView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\IOutputView.cs" />
+    <Compile Include="GUI\Views\IView.cs" />
+    <Compile Include="GUI\Views\MemoryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\MemoryView.Designer.cs">
+      <DependentUpon>MemoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\NText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\NText.designer.cs">
+      <DependentUpon>NText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\OutputView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\OutputView.Designer.cs">
+      <DependentUpon>OutputView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\PluginsUIView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\PluginsUIView.Designer.cs">
+      <DependentUpon>PluginsUIView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\RegistersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\RegistersView.Designer.cs">
+      <DependentUpon>RegistersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\StackView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\StackView.Designer.cs">
+      <DependentUpon>StackView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\StandardIOConsole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\StandardIOConsole.Designer.cs">
+      <DependentUpon>StandardIOConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\UnifiedCacheView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\UnifiedCacheView.Designer.cs">
+      <DependentUpon>UnifiedCacheView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Views\WatchView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Views\WatchView.Designer.cs">
+      <DependentUpon>WatchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\ARMPreferences.cs" />
+    <Compile Include="Preferences\IViewXMLSettings.cs" />
+    <Compile Include="Preferences\PreferencesForm\Controls\AllocatePolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\AllocatePolicy.Designer.cs">
+      <DependentUpon>AllocatePolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\Associativity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\Associativity.Designer.cs">
+      <DependentUpon>Associativity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\CacheSize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\CacheSize.Designer.cs">
+      <DependentUpon>CacheSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\DataCache.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\DataCache.Designer.cs">
+      <DependentUpon>DataCache.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\PowerOf2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\ReplacementStrategy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\ReplacementStrategy.Designer.cs">
+      <DependentUpon>ReplacementStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\WritePolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Controls\WritePolicy.Designer.cs">
+      <DependentUpon>WritePolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\PreferencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\PreferencesForm.Designer.cs">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\Cache.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\Cache.Designer.cs">
+      <DependentUpon>Cache.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\General.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\MainMemory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\MainMemory.Designer.cs">
+      <DependentUpon>MainMemory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\Plugins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\TabPages\Plugins.Designer.cs">
+      <DependentUpon>Plugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\CacheSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\CacheSummary.Designer.cs">
+      <DependentUpon>CacheSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\CacheWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\CacheWizard.designer.cs">
+      <DependentUpon>CacheWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\Wizard.designer.cs">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Preferences\PreferencesForm\Wizard\WizardPagesCollection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simulator\ARM7TDMICore.cs" />
+    <Compile Include="Simulator\ARM7TDMI_DataOps.cs" />
+    <Compile Include="Simulator\ARM7TDMI_LoadStore.cs" />
+    <Compile Include="Simulator\ExtensionInstructions\LegacySWIInstructions.cs" />
+    <Compile Include="Util\Util.cs" />
+    <EmbeddedResource Include="GUI\ARMSimForm.resx">
+      <DependentUpon>ARMSimForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\StandardIOConsole.resx">
+      <DependentUpon>StandardIOConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ARMSim.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\Resources.Designer.cs" />
+    <Compile Include="Simulator\ApplicationJimulator.cs" />
+    <Compile Include="Simulator\ARM7TDMI_ARMInstructions.cs" />
+    <Compile Include="Simulator\Breakpoints.cs" />
+    <Compile Include="Simulator\Cache\CacheBlock.cs" />
+    <Compile Include="Simulator\Cache\CacheSet.cs" />
+    <Compile Include="Simulator\Cache\DataCache.cs" />
+    <Compile Include="Simulator\Cache\L1Cache.cs" />
+    <Compile Include="Preferences\CachePreferences.cs" />
+    <Compile Include="Preferences\DataCachePreferences.cs" />
+    <Compile Include="Preferences\InstructionCachePreferences.cs" />
+    <Compile Include="Simulator\CodeFileLabels.cs" />
+    <Compile Include="Simulator\CodeLabels.cs" />
+    <Compile Include="Simulator\CPSR.cs" />
+    <Compile Include="Simulator\ExtensionInstructions\AngelSWIInstructions.cs" />
+    <Compile Include="Simulator\GeneralPurposeRegisters.cs" />
+    <Compile Include="Simulator\ISimulator.cs" />
+    <Compile Include="Simulator\BaseARMCore.cs" />
+    <Compile Include="Simulator\MemoryBlock.cs" />
+    <Compile Include="Simulator\Plugins\InstructionRange.cs" />
+    <Compile Include="Simulator\Plugins\MemoryRange.cs" />
+    <Compile Include="Simulator\Plugins\PluginManager.cs" />
+    <Compile Include="Preferences\PluginPreferences.cs" />
+    <Compile Include="Preferences\GeneralPreferences.cs" />
+    <Compile Include="Preferences\SimulatorPreferences.cs" />
+    <Compile Include="Simulator\ARM7TDMI_ThumbInstructions.cs" />
+    <Compile Include="Simulator\Utils.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointProcessor.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointProcessor.DataProcessingInstructions.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointProcessor.ExtensionInstructions.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointProcessor.LoadStoreInstructions.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointProcessor.RegisterTransferInstructions.cs" />
+    <Compile Include="Simulator\VFP\FloatingPointRegisters.cs" />
+    <Compile Include="Simulator\VFP\FPSCR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="App.ico" />
+    <EmbeddedResource Include="GUI\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CacheStatistics.resx">
+      <DependentUpon>CacheStatistics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\App.ico" />
+    <None Include="Resources\Continue.ico" />
+    <None Include="Resources\elbow.gif" />
+    <None Include="Resources\headerIcon.bmp" />
+    <None Include="Resources\lifestyle.bmp" />
+    <None Include="Resources\lifestyle.jpg" />
+    <None Include="Resources\Reload.ico" />
+    <None Include="Resources\Restart.ico" />
+    <EmbeddedResource Include="GUI\MultipleFileOpen.resx">
+      <DependentUpon>MultipleFileOpen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\AddWatch.resx">
+      <DependentUpon>AddWatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\CacheView.resx">
+      <DependentUpon>CacheView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\CodeView.resx">
+      <DependentUpon>CodeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\CodeViewList.resx">
+      <DependentUpon>CodeViewList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\CodeViewTab.resx">
+      <DependentUpon>CodeViewTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\DataCacheView.resx">
+      <DependentUpon>DataCacheView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\InstructionCacheView.resx">
+      <DependentUpon>InstructionCacheView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\MemoryView.resx">
+      <DependentUpon>MemoryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\NText.resx">
+      <DependentUpon>NText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\OutputView.resx">
+      <DependentUpon>OutputView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\PluginsUIView.resx">
+      <DependentUpon>PluginsUIView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\RegistersView.resx">
+      <DependentUpon>RegistersView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\StackView.resx">
+      <DependentUpon>StackView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\UnifiedCacheView.resx">
+      <DependentUpon>UnifiedCacheView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Views\WatchView.resx">
+      <DependentUpon>WatchView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\AllocatePolicy.resx">
+      <DependentUpon>AllocatePolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\Associativity.resx">
+      <DependentUpon>Associativity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\CacheSize.resx">
+      <DependentUpon>CacheSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\DataCache.resx">
+      <DependentUpon>DataCache.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\ReplacementStrategy.resx">
+      <DependentUpon>ReplacementStrategy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Controls\WritePolicy.resx">
+      <DependentUpon>WritePolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\PreferencesForm.resx">
+      <DependentUpon>PreferencesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\TabPages\Cache.resx">
+      <DependentUpon>Cache.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\TabPages\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\TabPages\MainMemory.resx">
+      <DependentUpon>MainMemory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\TabPages\Plugins.resx">
+      <DependentUpon>Plugins.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Wizard\CacheSummary.resx">
+      <DependentUpon>CacheSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Wizard\CacheWizard.resx">
+      <DependentUpon>CacheWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences\PreferencesForm\Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SampleImages.bmp" />
+    <None Include="Resources\StepInto.ico" />
+    <None Include="Resources\StepOver.ico" />
+    <None Include="Resources\Stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ARMPluginInterfaces\ARMPluginInterfaces.csproj">
+      <Project>{5C66E4AF-252A-4801-AFCE-6CC5C76A8E0C}</Project>
+      <Name>ARMPluginInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="ARMSimWindowManager\ARMSimWindowManager.csproj">
+      <Project>{0724AD48-6626-4FDF-BF24-6B9C380A1C93}</Project>
+      <Name>ARMSimWindowManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="ARMSimWindowManager\DockingWindows2\DockingWindows2.csproj">
+      <Project>{90bade90-0874-44b1-8b4a-e386f7a89fc5}</Project>
+      <Name>DockingWindows2</Name>
+    </ProjectReference>
+    <ProjectReference Include="ARMSimWindowManager\StaticWindows\StaticWindows.csproj">
+      <Project>{F3E3F908-C771-4B6F-A80E-27EAC773E9ED}</Project>
+      <Name>StaticWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PublishFile Include="QUT.ShiftReduceParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

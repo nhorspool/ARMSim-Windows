@@ -1,0 +1,15 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\bin\Release\ARMSim.Plugins.ButtonTimerPlugin.dll.config
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\bin\Release\ARMSim.Plugins.ButtonTimerPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\bin\Release\ARMSim.Plugins.ButtonTimerPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\bin\Release\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.BlackButtonsDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.ButtonTimerDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.EightSegmentDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.LedsDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.TimerDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.TwoLineLCDDisplay.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.csproj.GenerateResource.Cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.ButtonTimerPlugin\obj\Release\ARMSim.Plugins.ButtonTimerPlugin.csprojResolveAssemblyReference.cache

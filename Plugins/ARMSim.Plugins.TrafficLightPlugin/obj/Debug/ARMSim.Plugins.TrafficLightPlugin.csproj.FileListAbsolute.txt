@@ -1,0 +1,11 @@
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMSim.Plugins.TrafficLightPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMSim.Plugins.TrafficLightPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMPluginInterfaces.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMSim.Plugins.UIControls.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMPluginInterfaces.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\bin\Debug\ARMSim.Plugins.UIControls.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\obj\Debug\ARMSim.Plugins.TrafficLightPlugin.TrafficIntersectionControl.resources
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\obj\Debug\ARMSim.Plugins.TrafficLightPlugin.csproj.GenerateResource.Cache
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\obj\Debug\ARMSim.Plugins.TrafficLightPlugin.dll
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\obj\Debug\ARMSim.Plugins.TrafficLightPlugin.pdb
+C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.TrafficLightPlugin\obj\Debug\ARMSim.Plugins.TrafficLightPlugin.csprojResolveAssemblyReference.cache

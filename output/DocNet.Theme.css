@@ -1,0 +1,39 @@
+/* Section heading color */
+h1, h2, h3, .side-head{
+	color: #4F6D7A !important;
+}
+
+/* Primary background colour */
+.primary {
+	background-color: #4A6FA5;
+}
+
+/* Font colour*/
+p {
+	color: #555555;
+}
+
+/* Footer colour */
+.footer{
+  	background-color: #e2e2e2;
+}
+
+/* First half of logo */
+#head1 {
+	color: #C0D6DF;
+}
+
+/* Second half of logo */
+#head2 {
+	color: #DBE9EE;
+}
+
+/* Hierarchy and content background */
+.normal {
+	background-color: white;
+}
+
+/* Links in sidebar */
+.side-link {
+  
+}
