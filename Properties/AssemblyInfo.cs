@@ -12,7 +12,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("University of Victoria")]
 [assembly: AssemblyProduct("ARMSim#")]
-[assembly: AssemblyCopyright("Copyright Â© University of Victoria, 2006-2015")]
+[assembly: AssemblyCopyright("Copyright © University of Victoria, 2006-2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
