@@ -1,2 +1,0 @@
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Installer\bin\Debug\Installer.msi
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Installer\bin\Debug\Installer.wixpdb

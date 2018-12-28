@@ -1,9 +1,0 @@
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMSim.Plugins.EmbestBoardPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMSim.Plugins.EmbestBoardPlugin.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMPluginInterfaces.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMSim.Plugins.UIControls.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMPluginInterfaces.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Debug\ARMSim.Plugins.UIControls.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardPlugin.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\obj\Debug\ARMSim.Plugins.EmbestBoardPlugin.csprojResolveAssemblyReference.cache

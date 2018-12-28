@@ -1,7 +1,0 @@
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\bin\Release\ARMSim.Plugins.IntegerDivisionPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\bin\Release\ARMSim.Plugins.IntegerDivisionPlugin.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\bin\Release\ARMPluginInterfaces.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\bin\Release\ARMPluginInterfaces.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\obj\Release\ARMSim.Plugins.IntegerDivisionPlugin.csprojResolveAssemblyReference.cache
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\obj\Release\ARMSim.Plugins.IntegerDivisionPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.IntegerDivisionPlugin\obj\Release\ARMSim.Plugins.IntegerDivisionPlugin.pdb

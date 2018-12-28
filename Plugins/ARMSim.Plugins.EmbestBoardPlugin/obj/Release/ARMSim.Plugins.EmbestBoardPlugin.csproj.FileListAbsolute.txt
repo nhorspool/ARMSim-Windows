@@ -1,8 +1,0 @@
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMSim.Plugins.EmbestBoardPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMSim.Plugins.EmbestBoardPlugin.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMPluginInterfaces.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMSim.Plugins.UIControls.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMPluginInterfaces.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\bin\Release\ARMSim.Plugins.UIControls.pdb
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\obj\Release\ARMSim.Plugins.EmbestBoardPlugin.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\Plugins\ARMSim.Plugins.EmbestBoardPlugin\obj\Release\ARMSim.Plugins.EmbestBoardPlugin.pdb

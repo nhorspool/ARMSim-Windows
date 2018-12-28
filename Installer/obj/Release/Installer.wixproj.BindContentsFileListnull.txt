@@ -1,8 +1,0 @@
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\arm-none-eabi-as.exe
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\ARMPluginInterfaces.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\ARMSim.exe
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\ARMSim.exe.config
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\ARMSimWindowManager.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\DockingWindows2.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\StaticWindows.dll
-C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\\Build201\WeifenLuo.WinFormsUI.Docking.dll
