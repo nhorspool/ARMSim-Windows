@@ -9,3 +9,13 @@ C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWi
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows2\obj\Release\DockingWindows2.dll
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows2\obj\Release\DockingWindows2.pdb
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\DockingWindows2\bin\Release\ARMSimWindowManager.dll.config
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\DockingWindows2.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\DockingWindows2.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\ARMPluginInterfaces.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\ARMSimWindowManager.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\bin\Release\ARMSimWindowManager.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\obj\Release\DockingWindows2.csprojResolveAssemblyReference.cache
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\obj\Release\DockingWindows2.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\DockingWindows2\obj\Release\DockingWindows2.pdb

@@ -10,3 +10,14 @@ C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWin
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.dll
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.pdb
 C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.dll.config
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\StaticWindows.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\StaticWindows.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\ARMPluginInterfaces.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\ARMPluginInterfaces.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\bin\Release\ARMSimWindowManager.pdb
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.csprojResolveAssemblyReference.cache
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.StaticMainForm.resources
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.csproj.GenerateResource.Cache
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.dll
+C:\Users\ghoff.UNOMAHA\Documents\GitHub\ARMSim-Windows\ARMSimWindowManager\StaticWindows\obj\Release\StaticWindows.pdb

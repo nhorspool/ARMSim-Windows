@@ -16,11 +16,13 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <StartArguments>-B /P:space:space+27 Angel_print_int.s</StartArguments>
-    <StartWorkingDirectory>C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\TestFiles\</StartWorkingDirectory>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartArguments>
     </StartArguments>
-    <StartWorkingDirectory>C:\Users\Nigel\Documents\Hacking\ARMSim\ASMSim-201\TestFiles\</StartWorkingDirectory>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
   </PropertyGroup>
 </Project>
