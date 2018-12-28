@@ -1202,7 +1202,7 @@ namespace ARMSim.GUI
             (tdd.DropDownItems[0] as ToolStripMenuItem).Enabled = simulatorReady;//Run
             (tdd.DropDownItems[2] as ToolStripMenuItem).Enabled = simulatorReady;//Step-Into
             (tdd.DropDownItems[3] as ToolStripMenuItem).Enabled = simulatorReady;//Step-Over
-            (tdd.DropDownItems[5] as ToolStripMenuItem).Enabled = simulatorReady;//Restart
+            (tdd.DropDownItems[5] as ToolStripMenuItem).Enabled = mSimulationStopped;//Restart
             (tdd.DropDownItems[6] as ToolStripMenuItem).Enabled = mJM.ValidLoadedProgram;//Stop
             (tdd.DropDownItems[8] as ToolStripMenuItem).Enabled = simulatorReady;//Clear All Breakpoints
         }//debugToolStripMenuItem_DropDownOpening
